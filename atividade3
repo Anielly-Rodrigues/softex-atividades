@@ -1,0 +1,42 @@
+Em uma inscrição, o usuário informou os seguintes dados:
+
+- Nome: José Almeida da Silva
+- CPF: 12345678900
+- RG: 9517530
+- Altura: 1,78
+- Endereço: Rua A, 380 – Centro – Recife/PE
+
+No algoritmo, descreva como será:
+1. A proposta das variáveis;
+2. Elaborada a declaração das variáveis;
+3. Utilizado o comando de atribuição.
+
+
+
+resposta:
+
+
+algoritimo:
+
+1: proposta das variáveis:
+variável: (Nome) recebe cadeia de caracteres
+variavel: (CPF) recebe numeros inteiros
+variável: (RG) recebe numeros inteiros
+variável: (altura) recebe numeros reais
+variáveis: (endereço) recebe cadeia de caracteres
+
+2: elaborar a declaraçao das variáveis;
+variável nome; "José Almeida da Silva"
+variável CPF; "12345678900"
+variável RG; "9517530"
+variável Altur; "1,78"
+variável Eendereço; "Rua A, 380 – Centro – Recife/PE"
+
+3. Utilizado o comando de atribuição.
+variável nome; <- "José Almeida da Silva"
+variável CPF; <- "12345678900"
+variável RG; <- "9517530"
+variável Altur; <- "1,78"
+variável Eendereço; <- "Rua A, 380 – Centro – Recife/PE"
+
+
