@@ -1,0 +1,54 @@
+Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:
+
+- Nome
+- Endereço
+- Cidade
+- CPF
+- RG
+- Idade
+- Nome do pai
+- Nome da mãe
+- Peso
+- Renda bruta
+
+
+resposta: 
+
+Declaração: 
+Nome, Endereço, Cidade, nomeDoPai, nomeDaMae <- caractere
+CPF, RG, IDADE <- INTEIRO
+PESO, rendaBruta <- REAL
+
+
+algoritmo:
+
+escreva ('Digite seu nome:')
+leia (Nome)
+
+escreva ('Digite seu Endereço:')
+leia (Endereço)
+
+escreva ('Digite sua Cidade:')
+leia (Cidade)
+
+escreva ('Digite seu CPF:')
+leia (nome)
+
+escreva ('Digite seu RG:')
+leia (RG)
+
+escreva ('Digite sua Idade:')
+leia (Idade)
+
+escreva ('Digite o Nome do Pai:')
+leia (Nome Do Pai)
+
+escreva ('Digite o Nome da Mãe:')
+leia (Nome_da_mae)
+
+escreva ('Digite seu Peso:')
+leia (Peso)
+
+escreva ('Digite sua Renda bruta:')
+leia (Renda_bruta)
+
