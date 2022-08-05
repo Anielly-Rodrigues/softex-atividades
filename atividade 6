@@ -1,0 +1,210 @@
+Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. 
+Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+
+Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos.
+Depois, informe quantos deles foram aprovados, de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+
+Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+
+ATENÇÃO: As notas por turma não podem se repetir.
+
+
+resposta: 
+
+
+declaração das variáveis;
+
+notaA, notaB, notaC, notaD: vetor [1..25] de real
+melhorNotaA, melhorNotaB, melhorNotaC, melhorNotaD, melhorNotaTodos: real
+nomoalunoA, nomealunoB, nomealunoC, nomealunoD:vetor [1..25] de caractere
+melhorAlunoA, melhorAlunoB, melhorAlunoC, melhorAlunoD, melhorAlunoTodos: caractere
+
+algoritmo;
+
+Inicio
+
+ 
+      escreval ("Digite o nome e a nota do aluno da turma A:")
+      leia (alunoA[i])
+      leia (notaA[i])
+      
+ Fimpara
+ 
+  Para i de 1 ate 25 faca
+  
+      escreval ("Digite o nome e a nota do aluno da turma B:")
+      leia (alunoB[i])
+      leia (notaB[i])
+
+ Fimpara
+ 
+  Para i de 1 ate 25 faca
+  
+      escreval ("Digite o nome e a nota do aluno da turma C:")
+      leia (alunoC[i])
+      leia (notaC[i])
+
+ Fimpara
+ 
+  Para i de 1 ate 25 faca
+  
+      escreval ("Digite o nome e a nota do aluno da turma D:")
+      leia (alunoD[i])
+      leia (notaD[i])
+
+ Fimpara
+ 
+        para i de 1 ate 25 faca
+        
+             se (notaA[i]>=7) entao
+             
+                escreval ("Aluno da turma A: ",alunoA[i],", Aprovado! Nota: ",notaA[i])
+
+             senao
+             
+                escreval ("Aluno da turma A: ",alunoA[i],", Reprovado! Nota: ",notaA[i])
+
+             fimse
+             
+        fimpara
+        
+        para i de 1 ate 25 faca
+        
+             se (notaB[i]>=7) entao
+             
+               escreval ("Aluno da turma B: ",alunoB[i],", Aprovado! Nota: ",notaB[i])
+
+             senao
+             
+                escreval ("Aluno da turma B: ",alunoB[i],", Reprovado! Nota: ",notaB[i])
+
+             fimse
+        
+        fimpara
+        
+        para i de 1 ate 25 faca
+        
+              se (notaC[i]>=7) entao
+              
+
+                 escreval ("Aluno da turma C: ",alunoC[i],", Aprovado! Nota: ",notaC[i])
+              senao
+              
+                escreval ("Aluno da turma C: ",alunoC[i],", Reprovado! Nota: ",notaC[i])
+
+              fimse
+              
+        fimpara
+        
+        para i de 1 ate 25 faca
+        
+               se (notaD[i]>=7) entao
+               
+                    escreval ("Aluno da turma D: ",alunoD[i],", Aprovado! Nota: ",notaD[i])
+
+               senao
+               
+                    escreval ("Aluno da turma D: ",alunoD[i],", Reprovado! Nota: ",notaD[i])
+
+               fimse
+               
+        fimpara
+        
+ para i de 1 ate 25 faca
+      para j de 1 ate 26 faca
+           se (notaA[i] > notaA[j]) entao
+           
+              melhorAlunoA <- alunoA[i]
+               melhorNotaA <- notaA[i]
+               
+
+           senao
+                melhorAlunoA <- alunoA[j]
+                melhorNotaA <-notaA[j]
+                
+
+
+           fimse
+ para i de 1 ate 25 faca
+      para j de 1 ate 26 faca
+           se (notaB[i] > notaB[j]) entao
+               melhorAlunoB <- alunoB[i]
+               melhorNotaB <- notaB[i]
+           senao
+                 melhorAlunoB <- alunoB[j]
+                melhorNotaB <-notaB[j]
+           fimse
+                
+ para i de 1 ate 25 faca
+      para j de 1 ate 26 faca
+      
+          se (notaB[i] > notaB[j]) entao
+          
+               melhorAlunoC <- alunoC[i]
+               melhorNotaC <- notaC[i]
+           senao
+                melhorAlunoC <- alunoC[j]
+                melhorNotaC <-notaC[j]
+          fimse
+          
+ para i de 1 ate 25 faca
+      para j de 1 ate 26 faca
+      
+          se (notaB[i] > notaB[j]) entao
+          
+               melhorAlunoD <- alunoD[i]
+               melhorNotaD <- notaD[i]
+               
+          senao
+          
+                melhorAlunoD <- alunoD[j]
+                melhorNotaD <-notaD[j]
+                
+          fimse
+      fimpara
+ fimpara
+      escreval("Melhor nota tuma A: ",melhorAlunoA,":",melhorNotaA)
+      escreval("Melhor nota tuma B: ",melhorAlunoB,":",melhorNotaB)
+      escreval("Melhor nota tuma C: ",melhorAlunoC,":",melhorNotaC)
+      escreval("Melhor nota tuma D: ",melhorAlunoD,":",melhorNotaD)
+
+
+      se (melhorNotaA > melhorNotaB) e (melhorNotaA >melhorNotaC) e (melhorNotaA >melhorNotaD) entao
+      
+                 melhorAlunoTodos <- melhorAlunoA
+                 melhorNotatodos <- melhorNotaA
+                 
+      senao
+           se (melhorNotaB > melhorNotaA) e (melhorNotaB >melhorNotaC) e (melhorNotaB >melhorNotaD) entao
+
+              melhorAlunoTodos <- melhorAlunoB
+              melhorNotatodos <- melhorNotaB
+
+              senao
+                         se (melhorNotaC > melhorNotaB) e (melhorNotaC >melhorNotaA) e (melhorNotaC >melhorNotaD) entao
+
+                            melhorAlunoTodos <- melhorAlunoC
+                            melhorNotaTodos <- melhorNotaC
+                            
+                         senao
+              
+                              se (melhorNotaD > melhorNotaB) e (melhorNotaD >melhorNotaC) e (melhorNotaD >melhorNotaA) entao
+
+                                 melhoraAlunoTodos <- melhorAlunoD
+                                 melhorNotaTodos <- melhorNotaD
+                                 fimse
+              
+              fimse
+
+  escreval("Melhor nota de Todas as turmas: " ,melhorAlunoTodos,"Nota: ",melhorNotaTodos)
+      
+      fimse
+fimse
+      
+Fimalgoritmo
+
+
+
+
+
+
