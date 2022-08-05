@@ -1,0 +1,103 @@
+Elabore um algoritmo que possa descobrir, através de perguntas e respostas, qual meio de transporte o usuário está pensando.
+O usuário deverá escolher uma das seguintes opções:
+
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha
+
+Para chegar ao resultado, só devem ser usadas perguntas que retornem "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+
+
+
+resposta; 
+ 
+ pegunte (‘É terrestre?’,caractere Resposta)
+se Resposta = ‘sim’
+ pergunte (‘Usa capacete?’,caractere Resposta)
+se Resposta = ‘sim’
+	escreva (‘MOTO’)
+senão
+	pergunte (‘Tem passageiro?’,caractere Resposta)
+se Resposta = ‘sim’
+	pergunte (‘Anda na pista?’,caractere Resposta)
+se Resposta = ‘sim’
+	pegunte(‘É alto?’,caractere Resposta)
+se Resposta = ‘sim’
+	pergunte (‘Usa carroceria?’,caractere Resposta)
+se Resposta = ‘sim’
+		escreva (‘CAMINHÃO’)
+		senão 
+  pergunte ('É de uso publico°')
+se resposts sim 
+			escreva (‘ÔNIBUS’)
+fimse
+	senão
+  escreva (‘TREM’)
+fimse
+  senão
+		escreva (‘CARRO’)
+fimse
+   senão
+	pergunte (‘É pesado?’,caractere Resposta)
+se Resposta = ‘sim’
+	escreva (‘TRATOR’)
+  senão
+	escreva (‘BICICLETA’)
+fimse
+  senão
+
+pergunte (‘É aéreo?’,caractere Resposta)
+se Resposta = ‘sim’
+ pergunte (‘Viaja dentro?’,caractere Resposta)
+se Resposta = ‘sim’
+	pergunte(‘Tem piloto?’,caractere Resposta)
+	se Resposta = ‘sim’
+	pregunte (‘Possui asas fixas?’,caractere Resposta)
+se Resposta = ‘sim’
+	escreva (‘AVIÃO’)
+   senão
+			escreva (‘HELICÓPTERO’)
+ fimse
+	senão
+		escreva (‘BALÃO’)
+ fimse
+  senão
+	escreva (‘ASA DELTA’)
+fimse
+  senão
+pergunte (‘Navega na água?’,caractere Resposta)
+se Resposta = ‘sim’
+	pergunte(‘Tem motor?’,caractere Resposta)
+	se Resposta = ‘sim’
+	pergunte (‘É alto?’,caractere Resposta)
+		se Resposta = ‘sim’
+			escreva (‘NAVIO’)
+		senão
+			escreva (‘LANCHA’)
+fimse
+	senão
+		escreva (‘BARCO’)
+fimse
+  senão
+	escreva (‘SUBMARINO’)
+fimse
